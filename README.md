@@ -1,4 +1,4 @@
-# iseseisev-projekt
+# Portfolio rakendus
 Eesrakenduste arendamise iseseisva projekti lähteülesanne. 
 
 Töö võib teha teha 1-4 liikmelise meeskonnana. Punkte jaotatakse vastavalt sellele, mitu liiget on meeskonnas:
