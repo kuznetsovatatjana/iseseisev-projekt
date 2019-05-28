@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-family: 'Abril Fatface', Arial, Helvetica, sans-serif;
+}
+
+#first{
+    width: 100%;
+    height: 850px;
+    background-image: url("PORTFOLIOWEB.png");
+    background-size: cover;
+}
+
+/*FOOTER*/
+footer{
+    color: white;
+    background-color: #1212B3;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+}
+
+/*FOOTER TEXT*/
+.copy{
+    
+}
+/*GITHUB BUTTON*/
+a.button {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: white;
+    background-color: #FF6819;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 70px;
+    padding: 25px 80px;
+    margin: 20px auto;
+	box-shadow: 0 6px rgb(226, 80, 1);
+    border-radius: 20px;
+}
+
+a.button:hover {
+	box-shadow: 0 4px rgb(226, 80, 1);
+	top: 2px;
+}
+
+a.button:active {
+	box-shadow: 0 0 rgb(226, 80, 1);
+	top: 6px;
+}
