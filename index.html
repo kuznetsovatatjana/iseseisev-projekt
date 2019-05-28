@@ -17,7 +17,7 @@
     </div>
     <div class="container" id="cv">
         <h2>About Me:</h2>
-        <p>My name is Tatjana Kuznetsova. I'm Computer Science student in Tallinn University. In future I want to specialize in Web Development.</p>
+        <p>My name is Tatjana Kuznetsova. I'm Computer Science student in Tallinn University.</p>
     </div>
     <div class="container" id="about-page">
         <p>This page was created as the assignment for </p>
@@ -31,12 +31,32 @@
     <div class="container" id="projects">
         <h2>My Projects</h2>
     </div>
-    <div class="container" id="contact">
-        <h2>Contact Me</h2>
+    <div class="container">
+        Create something beautiful!
     </div>
+    <div class="container" id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <div class="field-block">
+                    <label for="name">Name:</label><br>
+                    <input id="name" class="field" name="name" required type="text" placeholder="Minnie Mouse">
+                </div>
+                <div class="field-block">
+                    <label for="email">E-mail:</label><br>
+                    <input id="email" class="field" name="email" required type="email" placeholder="minnie@disney.com">
+                </div>
+                <div class="field-block">
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" class="field" required name="message" rows="6"></textarea>
+                </div>
+                <button id="button" class="button" type="submit"><p>SEND</p></button>
+            </form>
+    </div>
+
     <footer>
         <p class="copy">&copy; 2019 Tatjana Kuznetsova<p>
         <a href="https://github.com/kuznetsovatatjana/iseseisev-projekt" class="button" target="_blank">GitHub</a>
     </footer>
+
 </body>
 </html>
