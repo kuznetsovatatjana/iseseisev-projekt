@@ -7,6 +7,12 @@
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
     <title>Tatjana Kuznetsova</title>
 </head>
 <body>
@@ -29,28 +35,36 @@
             </div>
         </div>
     </div>
+
     <div class="container" id="projects">
         <h2>My Projects</h2>
     </div>
+
     <div class="container" id="app">
             <a href="draw.html" class="button" target="_blank">Create something beautiful</a>
     </div>
+
     <div class="container" id="contact">
             <h2>Contact Me</h2>
-            <form id="contactForm">
+            <form id="contactForm" action="https://formspree.io/kuznetsovatatjana@gmail.com" method="POST">
+
                 <div class="field-block">
-                    <label for="name">Name:</label><br>
-                    <input id="name" class="field" name="name" required type="text" placeholder="Minnie Mouse">
+                            <label for="email">E-mail:</label><br>
+                            <input id="email" class="field" name="email" required type="email" placeholder="minnie@disney.com">
                 </div>
+
                 <div class="field-block">
-                    <label for="email">E-mail:</label><br>
-                    <input id="email" class="field" name="email" required type="email" placeholder="minnie@disney.com">
+                    <label for="subject">Subject:</label><br>
+                    <input id="subject" class="field" name="subject" required type="text" placeholder="Very important theme">
                 </div>
+
                 <div class="field-block">
                     <label for="message">Message:</label><br>
                     <textarea id="message" class="field" required name="message" rows="6"></textarea>
                 </div>
-                <button id="button" class="button" type="submit"><p>SEND</p></button>
+                <div class="status">
+                </div>
+                <button id="button" class="submit" type="submit"><p>SEND</p></button>
             </form>
     </div>
 
