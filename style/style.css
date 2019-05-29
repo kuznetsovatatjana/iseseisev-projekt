@@ -4,7 +4,7 @@
 }
 
 body{
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     letter-spacing: 1px;
 }
@@ -22,13 +22,59 @@ p{
     position: relative;
     margin: 10px auto;
 }
+/*NAVBAR*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #1212B3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
 /*HEADER FIELD*/
 #first{
     display: flex;
     justify-content: space-around;
     position: relative;
     width: 100%;
-    height: 753px;
+    height: 693px;
     background-image: url("img/PORTFOLIOWEB.png");
     background-size: cover;
     color: white;
@@ -228,4 +274,47 @@ a.button:hover {
 a.button:active {
 	box-shadow: 0 0 rgb(226, 80, 1);
 	top: 6px;
+}
+
+/*RESPONSIVE STYLING*/
+
+@media screen and (max-width: 1050px){
+    body{
+        overlow-x: hidden;
+    }
+   .nav-links{
+       position: absolute;
+       right: 0px;
+       height: 92vh;
+       top: 8vh;
+       background-color: #171E40;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 50%;
+       transform: translateX(100%);
+   }
+   .nav-links li{
+       opacity: 0;
+   }
+   .burger{
+       display: block;
+   }
+}
+
+.nav-active{
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
