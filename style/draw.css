@@ -8,6 +8,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     letter-spacing: 1px;
+    background-image: url('img/asanoha-400px.png');
 }
 #canvas{
     border: 5px solid black;
@@ -17,8 +18,10 @@ body{
 .controls{
     display: flex;
     width: 900px;
+    justify-content: space-between;
 }
 button{
+    width: 100px;
     color: white;
     text-transform: uppercase;
     padding: 10px;
