@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -57,17 +58,6 @@ nav{
     font-size: 14px;
 }
 
-.burger{
-    display: none;
-    cursor: pointer;
-}
-
-.burger div{
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-}
 /*HEADER FIELD*/
 #first{
     display: flex;
@@ -78,6 +68,7 @@ nav{
     background-image: url("img/PORTFOLIOWEB.png");
     background-size: cover;
     color: white;
+
 }
 
 #second{
@@ -249,72 +240,38 @@ footer{
 }
 
 /*GITHUB BUTTON*/
-a.button {
+footer a{
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: 2px;
     color: white;
-    background-color: #FF6819;
-    display: block;
-    position: relative;
-    cursor: pointer;
-    width: 70px;
-    padding: 25px 80px;
-    margin: 20px auto;
-	box-shadow: 0 6px rgb(226, 80, 1);
-    border-radius: 20px;
 }
 
-a.button:hover {
-	box-shadow: 0 4px rgb(226, 80, 1);
-	top: 2px;
-}
-
-a.button:active {
-	box-shadow: 0 0 rgb(226, 80, 1);
-	top: 6px;
-}
 
 /*RESPONSIVE STYLING*/
 
-@media screen and (max-width: 1050px){
-    body{
-        overlow-x: hidden;
+@media screen and (max-width: 920px){
+    nav{
+        flex-direction: column;
     }
-   .nav-links{
-       position: absolute;
-       right: 0px;
-       height: 92vh;
-       top: 8vh;
-       background-color: #171E40;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       width: 50%;
-       transform: translateX(100%);
-   }
-   .nav-links li{
-       opacity: 0;
-   }
-   .burger{
-       display: block;
-   }
-}
-
-.nav-active{
-    transform: translateX(0%);
-    transition: transform 0.5s ease-in;
-
-}
-
-@keyframes navLinkFade {
-    from{
-        opacity: 0;
-        transform: translateX(50px);
+    .nav-links{
+        flex-direction: column;
+        align-items: center;
     }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
+    .nav-links li{
+        margin: 15px;
+    }
+    #second{
+        flex-direction: column;
+    }
+    .box1{
+        font-size: 35px;
+        width:100%;
+    }
+    .box2{
+        width: 100%;
+        height: 2px;
+    }
+    .box3{
+        font-size: 25px;
+        width: 100%;
     }
 }
