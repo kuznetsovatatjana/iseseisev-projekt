@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
     //variables
     let painting = false;
     let customLineWidth = document.querySelector("#linewidth");
-    let lineColor = document.querySelectorAll(".colbtn");
+    let download = document.getElementById("download");
     //functions
     function startPosition(e){
         painting = true;
@@ -39,6 +39,11 @@ window.addEventListener('load', () => {
     }
     function clearCanvas(){
         ctx.clearRect(0,0, canvas.width, canvas.height);
+    }
+    function downloadImage(){
+        let image = document.getElementById("canvas").toDataURL("image/png")
+                    .replace("image/png", "image/octet-stream");
+        download.setAttribute("href", image);
     }
     //COLOR BUTTONS
     function pinkCol(){
@@ -86,6 +91,7 @@ window.addEventListener('load', () => {
     violet.addEventListener('click', violetCol);
     white.addEventListener('click', whiteCol);
     black.addEventListener('click', blackCol);
+    download.addEventListener('click', downloadImage);
 });
 
 //CONTACT FORM//
