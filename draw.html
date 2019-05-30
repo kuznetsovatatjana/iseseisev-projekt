@@ -4,12 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="style/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/draw.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
     <title>Painting App</title>
 </head>
 <body>
-    <h1>Create something beautiful</h1>
+    <canvas id="canvas" width="900" height="500"></canvas>
+<div class="controls">
+    <div class="sizing">
+    <select id="linewidth">
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+    </select>
+                    
+    </div>
+    <div class="color">
+        <button class="colbtn pink" value="pink">pink</button>
+        <button class="colbtn red" value="red">red</button>
+        <button class="colbtn orange" value="orangered">orange</button>
+        <button class="colbtn yellow" value="yellow">yellow</button>
+        <button class="colbtn green" value="green">green</button>
+        <button class="colbtn blue" value="skyblue">blue</button>
+        <button class="colbtn indigo" value="blue">indigo</button>
+        <button class="colbtn violet" value="indigo">violet</button>
+        <button class="colbtn white" value="white">white</button>
+        <button class="colbtn black" value="black">black</button>
+    </div>
+    <div class="cleansave">
+        <button class="clean">clean</button>
+        <button class="save">save</button>
+    </div>
+</div>
 </body>
 </html>
