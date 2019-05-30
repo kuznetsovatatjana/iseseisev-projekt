@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+#canvas{
+    border: 5px solid black;
+    cursor: pointer;
+    background-color: white;
+}
+.controls{
+    display: flex;
+    width: 900px;
+}
+button{
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 7px;
+    border: none;
+    background-color: gray;
+}
+
+select{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+.pink{
+    background-color: pink;
+}
+.red{
+    background-color: red;
+}
+.orange{
+    background-color: orangered;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color:green;
+}
+.blue{
+    background-color: skyblue;
+}
+.indigo{
+    background-color: blue;
+}
+.violet{
+    background-color: indigo;
+}
+.white{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+.black{
+    background-color: black;
+}
