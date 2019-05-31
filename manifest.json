@@ -1,0 +1,15 @@
+{
+    "short_name": "T.K. portfolio",
+    "name": "Tatjana Kuznetsova",
+    "theme_color": "#0000ff",
+    "background_color": "#fff",
+    "display": "standalone",
+    "icons": [
+    {
+    "src": "style/icons/icon-1x.png",
+    "type": "image/png",
+    "sizes": "48x48"
+    }
+    ],
+    "start_url": "/"
+    }

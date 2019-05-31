@@ -13,14 +13,13 @@
     crossorigin="anonymous">
 	</script>
     <script src="app.js"></script>
+    <link rel="manifest" href="manifest.json">
     <title>Tatjana Kuznetsova</title>
 </head>
 <body>
     <!--navbar-->
-<nav>
-        <div class = "logo">
-            <h1>T.K.</h1>
-        </div>
+    <nav>
+        <div class = "logo">T.K.</div>
         <ul class = "nav-links">
             <li><a href="#first">Home</a></li>
             <li><a href="#cv">About</a></li>
@@ -30,7 +29,7 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <!--CONTENT-->
+</div>
     <div class="container" id="first">
         <div class="container" id="second">
             <div class="box box1">
@@ -67,7 +66,7 @@
     </div>
 
     <div class="container" id="app">
-        <h1>Create something beautiful</h1>
+        <h2>Create something beautiful</h2>
         <p>This part was created only because I've decided, that only portfolio is not enough.</p>
         <p>Have fun and create something interesting.</p>
         <a href="draw.html" class="button" id="drawbtn">DRAW SOMETHING</a>
@@ -100,6 +99,17 @@
     <footer>
         <p class="copy">&copy; 2019 Tatjana Kuznetsova<p>
         <a href="https://github.com/kuznetsovatatjana/iseseisev-projekt" class="button" target="_blank">GitHub</a>
-    </footer>
+    </footer>-->
 </body>
+<script>
+        if ('serviceWorker' in navigator) {
+           console.log("Will the service worker register?");
+           navigator.serviceWorker.register('service-worker.js')
+             .then(function(reg){
+               console.log("Yes, it did.");
+            }).catch(function(err) {
+               console.log("No it didn't. This happened:", err)
+           });
+        }
+       </script>
 </html>

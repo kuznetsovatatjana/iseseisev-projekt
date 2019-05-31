@@ -100,10 +100,10 @@ $(document).ready(function(){
     $('.submit').click(function(event){
         console.log("CLICKED");
 
-        var email = $('#email').val();
-        var subject = $('#subject').val();
-        var message = $('#message').val();
-        var status = $('.status');
+        let email = $('#email').val();
+        let subject = $('#subject').val();
+        let message = $('#message').val();
+        let status = $('.status');
         status.empty();
 
         if(email.length > 5 && email.includes('@') && email.includes('.')){
