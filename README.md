@@ -12,6 +12,10 @@ Funktsionaalsus:
 * veebilehel oleku aeg footeris
 * joonistamine (canvase kasutamine, joone suuruse valik, värvi valik, terve canvase kustutamine, canvasest pildi salvestamine)
 
+Probleemid: 
+* väiksel ekraanil slaideri vasak nool on pildi keskel
+* slaider annab välja 2 vigu
+
 Ekraani tõmmised: https://drive.google.com/open?id=1qIMBZUgM0y53e7CDKePHmy8NCT0y_ISj
 
 
