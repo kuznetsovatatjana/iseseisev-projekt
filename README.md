@@ -1,5 +1,7 @@
 # Portfolio rakendus
 
+http://www.tlu.ee/~tanjak/PROJECT/iseseisev-projekt/
+
 Autor: Tatjana kuznetsova
 
 Funktsionaalsus: 
