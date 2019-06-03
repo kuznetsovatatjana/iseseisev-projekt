@@ -9,6 +9,21 @@
     "src": "style/icons/icon-1x.png",
     "type": "image/png",
     "sizes": "48x48"
+    },
+    {
+    "src": "style/icons/icon-2x.png",
+    "type": "image/png",
+    "sizes": "96x96"
+    },
+    {
+    "src": "style/icons/icon-3x.png",
+    "type": "image/png",
+    "sizes": "144x144"
+    },
+    {
+    "src": "style/icons/icon-4x.png",
+    "type": "image/png",
+    "sizes": "192x192"
     }
     ],
     "start_url": "/"
