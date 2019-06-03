@@ -1,25 +1,3 @@
-//Timer//
-
-window.onload = window.setTimeout("getSecs()", 1);
-startday = new Date();
-clockStart = startday.getTime();
-
-function initStopwatch() {
-  let myTime = new Date();
-  let timeNow = myTime.getTime();
-  let timeDiff = timeNow - clockStart;
-  this.diffSecs = timeDiff / 1000;
-  return this.diffSecs;
-}
-
-function getSecs() {
-  var mySecs = initStopwatch();
-  var mySecs1 = "" + mySecs;
-  mySecs1 = mySecs1.substring(0, mySecs1.indexOf(".")) + " seconds";
-  document.forms[0].timespent.value = mySecs1;
-  window.setTimeout("getSecs()", 1000);
-}
-
 //Accordeon//
 
 let title = document.getElementsByClassName('accordion-title');
@@ -54,8 +32,8 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {slideIndex = 1;} 
+  if (n < 1) {slideIndex = slides.length;}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none"; 
   }
@@ -100,3 +78,25 @@ $(document).ready(function(){
         }
     });
 });
+
+//Timer//
+
+window.onload = window.setTimeout("getSecs()", 1);
+startday = new Date();
+clockStart = startday.getTime();
+
+function initStopwatch() {
+  let myTime = new Date();
+  let timeNow = myTime.getTime();
+  let timeDiff = timeNow - clockStart;
+  this.diffSecs = timeDiff / 1000;
+  return this.diffSecs;
+}
+
+function getSecs() {
+  var mySecs = initStopwatch();
+  var mySecs1 = "" + mySecs;
+  mySecs1 = mySecs1.substring(0, mySecs1.indexOf(".")) + " seconds";
+  document.getElementById("custom-timer").innerHTML = mySecs1;
+  window.setTimeout("getSecs()", 1000);
+}

@@ -10,9 +10,9 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
   </script>
-  <script src="app.js"></script>
+  
   <link rel="manifest" href="manifest.json">
-  <title>Render</title>
+  <title>Tatjana Kuznetsova</title>
 </head>
 
 <body onLoad="showSlides(); viewSlides();">
@@ -155,11 +155,13 @@
       <p>
         <a href="https://github.com/kuznetsovatatjana/iseseisev-projekt" class="button" target="_blank">GitHub</a>
         <div class="timer">
-          <form>
-            <div><span>You are staying on page for</span> <input type="text" size="20" name="timespent"></div>
-          </form>
-          </giv>
+            <div class="timer">
+                <div><span>You are staying on page for</span>
+                  <div type="text" size="20" name="timespent" id="custom-timer"></div>
+                </div>
+              </div>
   </footer>
+  <script src="app.js"></script>
 </body>
 <script>
   if ('serviceWorker' in navigator) {
