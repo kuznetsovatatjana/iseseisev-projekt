@@ -1,4 +1,4 @@
-//Accordeon//
+//Accordion//
 
 let title = document.getElementsByClassName('accordion-title');
 

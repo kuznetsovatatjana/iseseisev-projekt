@@ -15,6 +15,10 @@ h2{
     font-size: 30px;
 }
 
+p {
+    padding: 10px;
+}
+
 /*NAVBAR*/
 nav{
     display: flex;
@@ -200,7 +204,7 @@ nav{
   
   /* Number text (1/3 etc) */
   .numbertext {
-    color: #f2f2f2;
+    color: white;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
@@ -213,14 +217,14 @@ nav{
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: white;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
   }
   
   .active, .dot:hover {
-    background-color: #717171;
+    background-color: rgba(0,0,255,0.8);
   }
   
   /* Fading animation */
@@ -264,6 +268,8 @@ nav{
 }
 /*PROJECTS*/
 #projects{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     background-color: #1212b3;
     box-sizing: border-box;
@@ -274,19 +280,20 @@ nav{
     color: white;
 }
 
-#accordion {
-    width: 70%;
+.accwrapper{
+    position: relative;
+    width: 80%;
     margin: 0 auto;
 }
 
 .accordion-title {
     color: #0000ff;
-    background-color: aquamarine;
+    background-color: white;
+    border: 1px solid black;
     text-align: center;
     padding: 20px;
     font-weight: bold;
     font-size: 18px;
-    margin: 20px;
 }
 
 .accordion-title.active + .accordion-cont {
@@ -295,7 +302,7 @@ nav{
 
 .accordion-cont {
     display: none;
-    width: 70%;
+    width: 100%;
 }
 
 .acc-cont-wrapper{
@@ -404,6 +411,9 @@ footer a{
 /*RESPONSIVE STYLING*/
 
 @media screen and (max-width: 920px){
+    body{
+        font-size: 12px;
+    }
     nav{
         flex-direction: column;
     }
