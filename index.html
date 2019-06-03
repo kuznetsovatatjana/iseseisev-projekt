@@ -1,115 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="style/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous">
-	</script>
-    <script src="app.js"></script>
-    <link rel="manifest" href="manifest.json">
-    <title>Tatjana Kuznetsova</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+  </script>
+  <script src="app.js"></script>
+  <link rel="manifest" href="manifest.json">
+  <title>Render</title>
 </head>
+
 <body>
-    <!--navbar-->
-    <nav>
-        <div class = "logo">T.K.</div>
-        <ul class = "nav-links">
-            <li><a href="#first">Home</a></li>
-            <li><a href="#cv">About</a></li>
-            <li><a href="#dev-skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#app">Draw</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</div>
-    <div class="container" id="first">
-        <div class="container" id="second">
-            <div class="box box1">
-                <p>Hello!</p>
-                <p>I'm</p>
-                <p class="orange">Tatjana</p>
-            </div>
-            <div class="box box2"></div>
-            <div class="box box3">
-                <p class="orange">Web Developer</p>
-                <p>Based in</p>
-                <p>Tallinn,</p> 
-                <p>Estonia</p>
-            </div>
+  <!--navbar-->
+  <nav>
+    <div class="logo">T.K.</div>
+    <ul class="nav-links">
+      <li><a href="#header">Home</a></li>
+      <li><a href="#cv">About</a></li>
+      <li><a href="#tlu">TLU</a></li>
+      <li><a href="#dev-skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#app">Draw</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+ 
+  <section id="header">
+    <div class="container" id="second">
+      <div class="box box1">
+        <p>Hello!</p>
+        <p>I'm</p>
+        <p class="orange">Tatjana</p>
+      </div>
+      <div class="box box2"></div>
+      <div class="box box3">
+        <p class="orange">Computer Science</p>
+        <p class="orange">Student</p>
+        <p>Based in</p>
+        <p>Tallinn,</p>
+        <p>Estonia</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cv">
+    <h2>About Me:</h2>
+    <p>My name is Tatjana Kuznetsova. I'm Computer Science student from Tallinn University.</p>
+    <p>I have created this page as the assignment for Tallin university "User interfaces of web applications" course.</p>
+  </section>
+  
+  <section id="tlu">
+    <h2>Tallinn University Buildings</h2>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="tlu1.png" style="width:100%">
+        <div class="text">Tallinn University. Astra Building.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="tlu2.png" style="width:100%">
+        <div class="text">Tallinn University. Terra Building.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="tlu3.png" style="width:100%">
+        <div class="text">Tallinn University. Mare Building.</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </section>
+
+  <section id="dev-skills">
+    <div id="frame">
+      <div id="innerframe">
+        <h2>My Skills</h2>
+        <p>HTML - CSS - JavaScript - jQuery - Node.js - Express</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="accordion-title">
+        <span>Clock</span>
+    </div>
+    <div class="accordion-cont">
+        <div class="acc-cont-wrapper">
+            <a class="accordeon_btn" href="#"><button type="button">Project</button></a>
+            <a class="accordeon_btn" href="https://github.com/kuznetsovatatjana/1kodutoo"><button type="button">GitHub</button></a>
         </div>
     </div>
 
-    <div class="container" id="cv">
-        <h2>About Me:</h2>
-        <p>My name is Tatjana Kuznetsova. I'm Computer Science student from Tallinn University.</p>
-        <p>I have created this page as the assignment for Tallin university "User interfaces of web applications" course.</p>
+    <div class="accordion-title">
+        <span>Some Future Project</span>
     </div>
-    <div class="container" id="dev-skills">
-        <div id="frame">
-            <div id="innerframe">
-                <h2>My Skills</h2>
-                <p>HTML - CSS - JavaScript - jQuery - Node.js - Express</p>
-            </div>
+    <div class="accordion-cont">
+        <div class="acc-cont-wrapper">
+            <a class="accordeon_btn" href="#"><button type="button">Project</button></a>
+            <a class="accordeon_btn" href="#"><button type="button">GitHub</button></a>
         </div>
     </div>
+  </section>
 
-    <div class="container" id="projects">
-        <h2>My Projects</h2>
-    </div>
+  <section id="app">
+    <h2>Create something beautiful</h2>
+    <p>This part was created only because I've decided, that only portfolio is not enough.</p>
+    <p>Have fun and create something interesting.</p>
+    <a href="draw/draw.html" class="button" id="drawbtn">DRAW SOMETHING</a>
+  </section>
 
-    <div class="container" id="app">
-        <h2>Create something beautiful</h2>
-        <p>This part was created only because I've decided, that only portfolio is not enough.</p>
-        <p>Have fun and create something interesting.</p>
-        <a href="draw.html" class="button" id="drawbtn">DRAW SOMETHING</a>
-    </div>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm" action="https://formspree.io/kuznetsovatatjana@gmail.com" method="POST">
 
-    <div class="container" id="contact">
-            <h2>Contact Me</h2>
-            <form id="contactForm" action="https://formspree.io/kuznetsovatatjana@gmail.com" method="POST">
+      <div class="field-block">
+        <label for="email">E-mail:</label><br>
+        <input id="email" class="field" name="email" required type="email" placeholder="minnie@disney.com">
+      </div>
 
-                <div class="field-block">
-                            <label for="email">E-mail:</label><br>
-                            <input id="email" class="field" name="email" required type="email" placeholder="minnie@disney.com">
-                </div>
+      <div class="field-block">
+        <label for="subject">Subject:</label><br>
+        <input id="subject" class="field" name="subject" required type="text" placeholder="Very important theme">
+      </div>
 
-                <div class="field-block">
-                    <label for="subject">Subject:</label><br>
-                    <input id="subject" class="field" name="subject" required type="text" placeholder="Very important theme">
-                </div>
+      <div class="field-block">
+        <label for="message">Message:</label><br>
+        <textarea id="message" class="field" required name="message" rows="6"></textarea>
+      </div>
+      <div class="status">
+      </div>
+      <button id="button" class="submit" type="submit"><p>SEND</p></button>
+    </form>
+  </section>
 
-                <div class="field-block">
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" class="field" required name="message" rows="6"></textarea>
-                </div>
-                <div class="status">
-                </div>
-                <button id="button" class="submit" type="submit"><p>SEND</p></button>
-            </form>
-    </div>
-
-    <footer>
-        <p class="copy">&copy; 2019 Tatjana Kuznetsova<p>
+  <footer>
+    <p class="copy">&copy; 2019 Tatjana Kuznetsova
+      <p>
         <a href="https://github.com/kuznetsovatatjana/iseseisev-projekt" class="button" target="_blank">GitHub</a>
-    </footer>-->
+        <div class="timer">
+          <form>
+            <div><span>You are staying on page for</span> <input type="text" size="20" name="timespent"></div>
+          </form>
+          </giv>
+  </footer>
 </body>
 <script>
-        if ('serviceWorker' in navigator) {
-           console.log("Will the service worker register?");
-           navigator.serviceWorker.register('service-worker.js')
-             .then(function(reg){
-               console.log("Yes, it did.");
-            }).catch(function(err) {
-               console.log("No it didn't. This happened:", err)
-           });
-        }
-       </script>
+  if ('serviceWorker' in navigator) {
+    console.log("Will the service worker register?");
+    navigator.serviceWorker.register('service-worker.js')
+      .then(function(reg) {
+        console.log("Yes, it did.");
+      }).catch(function(err) {
+        console.log("No it didn't. This happened:", err)
+      });
+  }
+</script>
 </html>
