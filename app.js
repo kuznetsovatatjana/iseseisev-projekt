@@ -1,3 +1,19 @@
+//top//
+
+window.onscroll = function() {goUp()};
+
+function goUp() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("topbtn").style.display = "block";
+  } else {
+    document.getElementById("topbtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 //Accordion//
 
 let title = document.getElementsByClassName('accordion-title');
