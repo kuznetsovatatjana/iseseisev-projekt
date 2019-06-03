@@ -12,6 +12,8 @@ Funktsionaalsus:
 * veebilehel oleku aeg footeris
 * joonistamine (canvase kasutamine, joone suuruse valik, värvi valik, terve canvase kustutamine, canvasest pildi salvestamine)
 
+* add to home screen on lisatud, aga ei ole testitud!
+
 Probleemid: 
 * väiksel ekraanil slaideri vasak nool on pildi keskel
 * slaider annab välja 2 vigu
