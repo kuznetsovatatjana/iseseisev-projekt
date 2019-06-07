@@ -1,4 +1,4 @@
-//TOP BUTTON//
+//TOP BUTTON//w3schools
 
 window.onscroll = function() {scrollFunction()};
 
