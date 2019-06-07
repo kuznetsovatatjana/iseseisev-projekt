@@ -12,13 +12,12 @@ Funktsionaalsus:
 * accordeon osa proektide osas
 * vormi töötlemine
 * veebilehel oleku aeg footeris
+* "Go to the top" nupp
 * joonistamine (canvase kasutamine, joone suuruse valik, värvi valik, terve canvase kustutamine, canvasest pildi salvestamine)
 
 * add to home screen on lisatud, aga ei ole testitud!
 
 Probleemid: 
 * väiksel ekraanil slaideri vasak nool on pildi keskel
-* slaider annab välja 2 vigu
-
 Ekraani tõmmised: https://drive.google.com/open?id=1qIMBZUgM0y53e7CDKePHmy8NCT0y_ISj
 
